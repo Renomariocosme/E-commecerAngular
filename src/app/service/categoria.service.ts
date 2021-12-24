@@ -30,7 +30,8 @@ export class CategoriaService {
 
   getByIdCategoria(id: number): Observable<Categoria> {
     return this.http.get<Categoria>(
-      `http://localhost:8080/categoria/${id}`
+      `http://localhost:8080/categorias/${id}`,
+        this.token
     );
   }
 

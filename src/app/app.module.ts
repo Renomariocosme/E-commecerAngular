@@ -16,6 +16,7 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { IdealizadoresComponent } from './idealizadores/idealizadores.component';
+import { CategoriasComponent } from './categorias/categorias.component';
 
 
 
@@ -33,6 +34,7 @@ import { IdealizadoresComponent } from './idealizadores/idealizadores.component'
     ProdutoDeleteComponent,
     CarrinhoComponent,
     IdealizadoresComponent,
+    CategoriasComponent,
 
     
   ],
