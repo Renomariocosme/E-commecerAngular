@@ -17,6 +17,11 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { IdealizadoresComponent } from './idealizadores/idealizadores.component';
 import { CategoriasComponent } from './categorias/categorias.component';
+import { ModaComponent } from './moda/moda.component';
+import { BelezaComponent } from './beleza/beleza.component';
+import { DecoracaoComponent } from './decoracao/decoracao.component';
+import { AlimenticioComponent } from './alimenticio/alimenticio.component';
+import { UtilitariosComponent } from './utilitarios/utilitarios.component';
 
 
 
@@ -35,6 +40,11 @@ import { CategoriasComponent } from './categorias/categorias.component';
     CarrinhoComponent,
     IdealizadoresComponent,
     CategoriasComponent,
+    ModaComponent,
+    BelezaComponent,
+    DecoracaoComponent,
+    AlimenticioComponent,
+    UtilitariosComponent,
 
     
   ],

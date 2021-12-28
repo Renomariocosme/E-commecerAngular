@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 
 @Injectable({
@@ -29,6 +30,13 @@ export class ProdutoService {
   getByIdProduto(id: number): Observable<Produto> {
     return this.http.get<Produto>(
       `http://localhost:8080/produto/${id}`
+    );
+  }
+
+  getByIdCategoria(id: number): Observable<Categoria> {
+    return this.http.get<Categoria>(
+      `http://localhost:8080/categorias/${id}`,
+        this.token
     );
   }
 

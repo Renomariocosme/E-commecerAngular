@@ -25,7 +25,8 @@ export class ProdutoComponent implements OnInit {
 
   cat:number
 
-  constructor(private router: Router, 
+  constructor(
+    private router: Router, 
     private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
     private carrinhoService: CarrinhoService,
