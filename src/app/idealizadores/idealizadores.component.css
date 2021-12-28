@@ -14,24 +14,8 @@ ul.social-network li{
     
 }
 
-.fa{
-    font-size: 35pt;
-    color: rgb(10, 9, 9);
-    padding: 10px;
-
-}
-.fa-linkedin:hover{
-    color: rgb(240, 173, 18);
+.cor-texto{
+    color: #ca946e;
 }
 
-.fa-instagram:hover{
-    color: rgb(240, 173, 18);
-}
 
-.fa-github:hover{
-    color: rgb(240, 173, 18);
-}
-
-.bg-rodape{
-    background-color: rgb(240, 173, 18);
-}
