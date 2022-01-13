@@ -24,25 +24,19 @@ export class ProdutoService {
   }
 
   getAllProduto(): Observable<Produto[]> {
-    return this.http.get<Produto[]>('http://localhost:8080/produto');
+    return this.http.get<Produto[]>('https://artemanha.herokuapp.com/produto');
   }
 
   getByIdProduto(id: number): Observable<Produto> {
     return this.http.get<Produto>(
-      `http://localhost:8080/produto/${id}`
+      `https://artemanha.herokuapp.com/produto/${id}`
     );
   }
 
-  getByIdCategoria(id: number): Observable<Categoria> {
-    return this.http.get<Categoria>(
-      `http://localhost:8080/categorias/${id}`,
-        this.token
-    );
-  }
 
   postProduto(produto: Produto): Observable<Produto> {
     return this.http.post<Produto>(
-      'http://localhost:8080/produto',
+      'https://artemanha.herokuapp.com/produto',
       produto,
       this.token
     );
@@ -50,7 +44,7 @@ export class ProdutoService {
 
   putProduto(produto: Produto): Observable<Produto> {
     return this.http.put<Produto>(
-      'http://localhost:8080/produto',
+      'https://artemanha.herokuapp.com/produto',
       produto,
       this.token
     );
@@ -58,7 +52,7 @@ export class ProdutoService {
 
   deleteProduto(id: number) {
     return this.http.delete(
-      `http://localhost:8080/produto/${id}`,
+      `https://artemanha.herokuapp.com/produto/${id}`,
       this.token
     );
   }

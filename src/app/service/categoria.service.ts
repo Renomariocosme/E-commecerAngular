@@ -24,20 +24,20 @@ export class CategoriaService {
 
   getAllCategoria(): Observable<Categoria[]> {
     return this.http.get<Categoria[]>(
-      'http://localhost:8080/categoria'
+      'https://artemanha.herokuapp.com/categoria'
     );
   }
 
   getByIdCategoria(id: number): Observable<Categoria> {
     return this.http.get<Categoria>(
-      `http://localhost:8080/categorias/${id}`,
+      `https://artemanha.herokuapp.com/categoria/${id}`,
         this.token
     );
   }
 
   postCategoria(categoria: Categoria): Observable<Categoria> {
     return this.http.post<Categoria>(
-      'http://localhost:8080/categoria',
+      'https://artemanha.herokuapp.com/categoria',
       categoria,
       this.token
     );
@@ -45,7 +45,8 @@ export class CategoriaService {
 
   putCategoria(categoria: Categoria): Observable<Categoria> {
     return this.http.put<Categoria>(
-      'http://localhost:8080/categoria',
+      
+'https://artemanha.herokuapp.com/categoria',
       categoria,
       this.token
     );
@@ -53,7 +54,9 @@ export class CategoriaService {
 
   deleteCategoria(id: number) {
     return this.http.delete(
-      `http://localhost:8080/categoria/${id}`,
+      `https://artemanha.herokuapp.com/categoria/${id}`
+
+      ,
       this.token
     );
   }

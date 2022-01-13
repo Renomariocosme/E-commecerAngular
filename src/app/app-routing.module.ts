@@ -9,6 +9,7 @@ import { IdealizadoresComponent } from './idealizadores/idealizadores.component'
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { ProdutoComponent } from './produto/produto.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -21,7 +22,11 @@ const routes: Routes = [
   { path: 'produto-delete/:id', component: ProdutoDeleteComponent },
   { path: 'carrinho', component: CarrinhoComponent },
   { path: 'idealizadores', component: IdealizadoresComponent},
+  { path: 'categoria/:id', component: CategoriasComponent},
+  { path: 'blog', component: BlogComponent }
+
   
+
   
 ];
 

@@ -18,4 +18,12 @@ ul.social-network li{
     color: #ca946e;
 }
 
+.icone{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
 
