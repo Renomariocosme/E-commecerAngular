@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/Categoria';
 import { Produto } from '../model/Produto';
 
 @Injectable({
@@ -23,18 +24,19 @@ export class ProdutoService {
   }
 
   getAllProduto(): Observable<Produto[]> {
-    return this.http.get<Produto[]>('http://localhost:8080/produto');
+    return this.http.get<Produto[]>('https://artemanha.herokuapp.com/produto');
   }
 
   getByIdProduto(id: number): Observable<Produto> {
     return this.http.get<Produto>(
-      `http://localhost:8080/produto/${id}`
+      `https://artemanha.herokuapp.com/produto/${id}`
     );
   }
 
+
   postProduto(produto: Produto): Observable<Produto> {
     return this.http.post<Produto>(
-      'http://localhost:8080/produto',
+      'https://artemanha.herokuapp.com/produto',
       produto,
       this.token
     );
@@ -42,7 +44,7 @@ export class ProdutoService {
 
   putProduto(produto: Produto): Observable<Produto> {
     return this.http.put<Produto>(
-      'http://localhost:8080/produto',
+      'https://artemanha.herokuapp.com/produto',
       produto,
       this.token
     );
@@ -50,7 +52,7 @@ export class ProdutoService {
 
   deleteProduto(id: number) {
     return this.http.delete(
-      `http://localhost:8080/produto/${id}`,
+      `https://artemanha.herokuapp.com/produto/${id}`,
       this.token
     );
   }

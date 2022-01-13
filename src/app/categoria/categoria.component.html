@@ -22,12 +22,6 @@
       </div>
 
 
-      
-
-
-
-
-
     <!--Cadastrar-->
     <div class="row">
       <div class="col-md-12 d-flex justify-content-center mt-5 mb-5 cor-texto">
@@ -59,6 +53,10 @@
                 [(ngModel)]="produto.quantidade" />
             </div>
             <div>
+              <div>
+                <label for="categoria">Selecione a categoria:</label>
+                
+              </div>
               <select name="categorias" id="categorias" [(ngModel)]="idCat" (change)="findCategoriaById()">
                 <option *ngFor="let cat of listaCategoria" value="{{ cat.id }}">
                   {{ cat.categoria }}

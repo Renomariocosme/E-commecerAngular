@@ -16,7 +16,8 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { IdealizadoresComponent } from './idealizadores/idealizadores.component';
-import { CategoriasComponent } from './categorias/categorias.component';
+import { UtilitariosComponent } from './utilitarios/utilitarios.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -34,7 +35,8 @@ import { CategoriasComponent } from './categorias/categorias.component';
     ProdutoDeleteComponent,
     CarrinhoComponent,
     IdealizadoresComponent,
-    CategoriasComponent,
+    UtilitariosComponent,
+    BlogComponent,
 
     
   ],

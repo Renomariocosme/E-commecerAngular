@@ -1,0 +1,29 @@
+.f-16{
+    font-size: 18px;
+}
+
+ul.social-network{
+    list-style: none;
+    padding: 0;
+}
+
+ul.social-network li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    
+}
+
+.cor-texto{
+    color: #ca946e;
+}
+
+.icone{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+

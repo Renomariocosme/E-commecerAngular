@@ -3,13 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { CategoriaComponent } from './categoria/categoria.component';
-import { CategoriasComponent } from './categorias/categorias.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { IdealizadoresComponent } from './idealizadores/idealizadores.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { LoginComponent } from './login/login.component';
 import { ProdutoComponent } from './produto/produto.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
@@ -22,7 +22,11 @@ const routes: Routes = [
   { path: 'produto-delete/:id', component: ProdutoDeleteComponent },
   { path: 'carrinho', component: CarrinhoComponent },
   { path: 'idealizadores', component: IdealizadoresComponent},
-  { path: 'categoria/:id', component: CategoriasComponent}
+  { path: 'categoria/:id', component: CategoriaComponent},
+  { path: 'blog', component: BlogComponent }
+
+  
+
   
 ];
 

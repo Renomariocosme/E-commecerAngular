@@ -1,23 +1,24 @@
 <div class="row d-flex justify-content-center" >
   <div class="col-md-12 cor-de-fundo text-white d-flex justify-content-center py-3">
     <div class="col-md-5 d-flex justify-content-around">
-      <a class="text-reset linkMenu" href=""> Moda </a>
-    <a class="text-reset linkMenu" href=""> Beleza</a>
-    <a class="text-reset linkMenu" href=""> Decoração </a>
-    <a class="text-reset linkMenu" href=""> Alimentício </a>
-    <a class="text-reset linkMenu" href=""> Utilitários </a>
+      <a class="text-reset linkMenu" href="#ModaCat"> Moda</a>
+    <a class="text-reset linkMenu" href="#BelezaCat"> Beleza</a>
+    <a class="text-reset linkMenu" href="#DecoracaoCat"> Decoração</a>
+    <a class="text-reset linkMenu" href="#AlimenticioCat"> Alimentício</a>
+    <a class="text-reset linkMenu" href="#UtilitariosCat"> Utilitários</a>
 
     </div>
   </div>
 </div>
 
-<div class="container-fluid mt-5 ">
+<div id="ModaCat" class="container-fluid mt-5 ">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="row d-flex justify-content-center">
+
         <div class="col-sm-3" *ngFor="let produto of listaProdutos">
-           <!-- <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a> -->
+           <!-- <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a> -->         
 
             <div class="card text-center">
               <img
@@ -59,3 +60,208 @@
     </div>
   </div>
 </div>
+
+<!--CATEGORIA BELEZA
+
+<div id="BelezaCat" class="container-fluid mt-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3" *ngFor="let produto of listaProdutos">
+            <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a>
+
+            <div *ngIf="produto.categoria.categoria == 'Beleza'" class="card text-center">
+              <img
+                class="card-img-top"
+                src="{{ produto.imagemProduto }}"
+                alt="Imagem de capa do card de produto"
+              />
+              <div class="card-body">
+                <h3>
+                  <a href="#" class='nome cor-texto'>{{ produto.nome }}</a>
+                </h3>
+                <div class="text-center">
+                  {{ produto.preco | currency: "BRL" }}
+                </div>
+                <p class="card-text text-center">
+                  {{ produto.avaliacaoProduto }}
+                </p>
+                <div class="text-center">
+                  <a
+                    href="#"
+                    class="btn cor-buttom text-white"
+                    (click)="getProdutoById(produto.id)"
+                    routerLink="/carrinho"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 d-flex justify-content-center">
+        <div class=" mt-5">
+          <button id="carrinho" class="btn text-white mb-5" routerLink="/carrinho">
+            Conferir Carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="DecoracaoCat" class="container-fluid mt-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3" *ngFor="let produto of listaProdutos">
+            <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a>
+
+            <div *ngIf="produto.categoria.categoria == 'Decoracao'" class="card text-center">
+              <img
+                class="card-img-top"
+                src="{{ produto.imagemProduto }}"
+                alt="Imagem de capa do card de produto"
+              />
+              <div class="card-body">
+                <h3>
+                  <a href="#" class='nome cor-texto'>{{ produto.nome }}</a>
+                </h3>
+                <div class="text-center">
+                  {{ produto.preco | currency: "BRL" }}
+                </div>
+                <p class="card-text text-center">
+                  {{ produto.avaliacaoProduto }}
+                </p>
+                <div class="text-center">
+                  <a
+                    href="#"
+                    class="btn cor-buttom text-white"
+                    (click)="getProdutoById(produto.id)"
+                    routerLink="/carrinho"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 d-flex justify-content-center">
+        <div class=" mt-5">
+          <button id="carrinho" class="btn text-white mb-5" routerLink="/carrinho">
+            Conferir Carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="AlimenticioCat" class="container-fluid mt-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3" *ngFor="let produto of listaProdutos">
+           <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a>
+
+            <div *ngIf="produto.categoria.categoria == 'Alimenticio'" class="card text-center">
+              <img
+                class="card-img-top"
+                src="{{ produto.imagemProduto }}"
+                alt="Imagem de capa do card de produto"
+              />
+              <div class="card-body">
+                <h3>
+                  <a href="#" class='nome cor-texto'>{{ produto.nome }}</a>
+                </h3>
+                <div class="text-center">
+                  {{ produto.preco | currency: "BRL" }}
+                </div>
+                <p class="card-text text-center">
+                  {{ produto.avaliacaoProduto }}
+                </p>
+                <div class="text-center">
+                  <a
+                    href="#"
+                    class="btn cor-buttom text-white"
+                    (click)="getProdutoById(produto.id)"
+                    routerLink="/carrinho"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 d-flex justify-content-center">
+        <div class=" mt-5">
+          <button id="carrinho" class="btn text-white mb-5" routerLink="/carrinho">
+            Conferir Carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="UtilitariosCat" class="container-fluid mt-5 ">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row d-flex justify-content-center">
+          <div class="col-sm-3" *ngFor="let produto of listaProdutos">
+           <a class="nav-link" aria-current="page" [routerLink]="['/categoria',listaCat.id]"></a>
+
+            <div *ngIf="produto.categoria.categoria == 'Utilitarios'" class="card text-center">
+              <img
+                class="card-img-top"
+                src="{{ produto.imagemProduto }}"
+                alt="Imagem de capa do card de produto"
+              />
+              <div class="card-body">
+                <h3>
+                  <a href="#" class='nome cor-texto'>{{ produto.nome }}</a>
+                </h3>
+                <div class="text-center">
+                  {{ produto.preco | currency: "BRL" }}
+                </div>
+                <p class="card-text text-center">
+                  {{ produto.avaliacaoProduto }}
+                </p>
+                <div class="text-center">
+                  <a
+                    href="#"
+                    class="btn cor-buttom text-white"
+                    (click)="getProdutoById(produto.id)"
+                    routerLink="/carrinho"
+                    >Comprar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row w-100 d-flex justify-content-center">
+        <div class=" mt-5">
+          <button id="carrinho" class="btn text-white mb-5" routerLink="/carrinho">
+            Conferir Carrinho
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
