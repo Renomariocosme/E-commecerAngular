@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { CategoriaComponent } from './categoria/categoria.component';
-import { CategoriasComponent } from './categorias/categorias.component';
 import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 import { IdealizadoresComponent } from './idealizadores/idealizadores.component';
@@ -25,6 +24,9 @@ const routes: Routes = [
   { path: 'idealizadores', component: IdealizadoresComponent},
   { path: 'categoria/:id', component: CategoriasComponent},
   { path: 'blog', component: BlogComponent }
+
+  
+
   
 ];
 
