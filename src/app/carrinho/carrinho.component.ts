@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
 import { CategoriaService } from '../service/categoria.service';
@@ -17,7 +18,8 @@ export class CarrinhoComponent implements OnInit {
     private carrinho: CarrinhoService,
     private prod: ProdutoService,
     private cat: CategoriaService,
-    private auth: AuthService
+    private auth: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(){ }
@@ -28,6 +30,12 @@ export class CarrinhoComponent implements OnInit {
 
   parcela(){
     return this.total()/12
+  }
+
+  finalizarCompra(){
+    
+    this.router.navigate(["/inicio"])
+    alert("Sua compra foi finalizada com sucesso. Volte sempre!")
   }
 
 }

@@ -53,6 +53,10 @@
                 [(ngModel)]="produto.quantidade" />
             </div>
             <div>
+              <div>
+                <label for="categoria">Selecione a categoria:</label>
+                
+              </div>
               <select name="categorias" id="categorias" [(ngModel)]="idCat" (change)="findCategoriaById()">
                 <option *ngFor="let cat of listaCategoria" value="{{ cat.id }}">
                   {{ cat.categoria }}

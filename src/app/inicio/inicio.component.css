@@ -237,3 +237,15 @@ section {
   font-size: 80px;
   font-family: "Amatic SC", cursive;
 }
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  background: #fff;
+  padding: 40px 30px;
+  width: 100%;
+  border: 1px solid #eef0ef;
+}
+
+.cor-texto{
+  color: #863126;
+}

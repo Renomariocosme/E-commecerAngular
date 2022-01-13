@@ -22,6 +22,7 @@ import { BelezaComponent } from './beleza/beleza.component';
 import { DecoracaoComponent } from './decoracao/decoracao.component';
 import { AlimenticioComponent } from './alimenticio/alimenticio.component';
 import { UtilitariosComponent } from './utilitarios/utilitarios.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -45,6 +46,7 @@ import { UtilitariosComponent } from './utilitarios/utilitarios.component';
     DecoracaoComponent,
     AlimenticioComponent,
     UtilitariosComponent,
+    BlogComponent,
 
     
   ],
